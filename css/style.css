@@ -1,0 +1,163 @@
+body { 
+	background-color: #ff3535;
+	margin: 0;
+	padding: 2.5em 0;
+	font-family: sans-serif;
+	color: #292929;
+}
+
+.wrap {
+	width: 1180px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#slides {
+	width: 9999999px;
+}
+
+
+/* Each slide */
+#slides > div {
+	float: left;
+	width: 1180px;
+	height: 680px;
+	margin-right: 200px;
+	text-align: center;
+
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+
+	display: box;
+	box-align: center;
+	box-orient: horizontal;
+	box-pack: center;
+
+	-webkit-transition: all 1s;
+}
+
+/* Slide Styling */
+h1,
+h2,
+h3,
+h4 {
+	color: #292929;
+	font-family: 'League Gothic', sans-serif;
+	letter-spacing: -5px;
+	margin-top: 0;
+}
+
+.first
+{
+	margin-top: 50px;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+}
+
+#slides > div h2 {
+	font-size: 172px;
+	line-height: 1em;
+	margin: 0;
+}
+
+h2 span {
+	color: white;
+	font-size: .3em;
+	display: block;
+	letter-spacing: -1px;
+	line-height: 1em;
+	margin-bottom: 10px;
+	text-shadow: 5px 3px 0 #333;
+}
+
+
+h3 {
+	font-size: 115px;
+	margin-bottom: .4em;
+}
+
+h4 {
+	font-size: 50px;
+	letter-spacing: -1px;
+	margin-bottom: 20px;
+	margin-top: .5em;
+	padding-bottom: .2em;
+	text-shadow: none; 
+}
+
+li {
+	list-style: none;
+}
+
+.code	{
+	text-indent: 30px;
+}
+
+.shizzle	{
+	margin-top: 80px;
+	font-size: .2em;
+	color: #292929;
+	text-shadow: none;
+}
+
+.shizzle em	{
+	color: white;
+	font-style: normal;
+	text-shadow: 2px 2px 0 #333;
+	font-size: 1.2em;
+}		
+
+.shizzle em:hover	{
+	border-bottom: 1px dashed black;
+	cursor: pointer;
+}
+
+
+/* GRID */
+
+.grid {
+	background: rgba(0,0,0,.2);
+	border: 1px solid white;
+	outline: 1px solid #666;
+	display: -webkit-box;
+	font-size: 13px;
+}
+
+.grid > div {
+	padding: .4em 2em;
+}
+
+#slides ul {
+	text-align: left;
+	font-size: 2em;
+	margin-top: 0;
+	padding-left: 0;
+	line-height: 1.5em;
+}
+
+
+/* dino css 3 */
+div.dino {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  -webkit-transition: all 3s ease-in;
+  -moz-transition: all 3s ease-in;
+  -o-transition: all 3s ease-in;
+  -ms-transition: all 3s ease-in;
+}
+div.dino img {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+}
+div.dino:hover {
+  -webkit-transform: translate(-280px, -190px);
+  -moz-transform: translate(-280px, -190px);
+  -o-transform: translate(-280px, -190px);
+  -ms-transform: translate(-280px, -190px);
+}

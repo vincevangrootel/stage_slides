@@ -1,0 +1,16 @@
+<h2>Hi!
+	<br />
+	<span class="first">We're looking for an internship.</span>
+	<span class="shizzle">Please check out our <em>shizzle</em>.</span>
+	<img class="ninja" src="../images/ninjas.png" style="display: none; margin-top: 10px;" />
+	
+<h2>
+	
+<script type="text/javascript">
+	$(document).ready(function()	{
+		$(".shizzle em").click(
+			function()	{
+				$("img.ninja").fadeIn();
+			});
+	});
+</script>

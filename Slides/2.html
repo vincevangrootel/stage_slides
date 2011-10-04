@@ -1,0 +1,22 @@
+<div>
+   	<h3>So..</h3>
+   	<ul>
+		<li>We are ninjas<img src="../images/shuriken.png" style="padding-left: 10px"></li>
+		<li>And we like dinosaurs<img src="../images/whodoesnt.png" style="display: none; padding-left: 10px;"></li>
+		<li>But there's more!</li>
+	<ul>
+		<br />
+	<h2><span>We're also passionate<br /> about all things Web!</span></h2>
+</div>
+
+
+<script type="text/javascript">
+	$("ul li:nth-child(2)").hover(
+		function()	{
+			$("ul li:nth-child(2) img").show();
+		},
+		function()	{
+			$("ul li:nth-child(2) img").hide();
+		}
+	);
+</script>

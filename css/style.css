@@ -38,6 +38,7 @@ body {
 	-webkit-transition: all 1s;
 }
 
+
 /* Slide Styling */
 h1,
 h2,
@@ -72,7 +73,6 @@ h2 span {
 	margin-bottom: 10px;
 	text-shadow: 5px 3px 0 #333;
 }
-
 
 h3 {
 	font-size: 115px;

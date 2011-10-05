@@ -1,5 +1,5 @@
 body { 
-	background-color: #ff3535;
+	background-color: #ff4c87;
 	margin: 0;
 	padding: 2.5em 0;
 	font-family: sans-serif;
@@ -139,7 +139,7 @@ div a, div a:link, div a:visited, div a:hover, div a:active	{
 }
 
 #slides ul {
-	text-align: left;
+	text-align: center;
 	font-size: 2em;
 	margin-top: 0;
 	padding-left: 0;

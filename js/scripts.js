@@ -14,43 +14,43 @@ $(document).ready(function()	{
 });
 
 var Slides = {
-	colours : {
-		"#0cff00": "fluogroen",
-		"#fcff00": "geel",
-		"#ff8ce3": "roze",
-		"#918cff": "blauwig",
-		"#f20b47": "donkerroze",
-		"#a7ff35": "limoen",
-		"#ff4200": "oranje"
-	},
+	colours : ["#ff4c87", "#ff653F", "#E8423A"],
    	totalSlides : '',
    	slideWidth : '',
    	translateAmount : 0,
    	currentSlide : 0,
    	container : $('#slides'),
+	colourCount : -1,
+	
 
-	pickRandomProperty : function pickRandomProperty(obj) {
-	    var result;
-	    var count = 0;
-	    for (var prop in obj)
-	        if (Math.random() < 1/++count)
-	           result = prop;
-	    return result;
-	},
    
    init : function(totalSlides) {
       if ( !totalSlides ) throw new Error('Please pass the total number of slides');
       Slides.totalSlides = ~~totalSlides;
-
       Slides.loadContent();
       Slides.setSlideWidth(); 
       Slides.keyPress();
+
+		Slides.pickNextColour(Slides.colours);
 
       if ( /#slide-\d{1,3}/i.test( location.hash ) ) { 
          Slides.currentSlide = ~~location.hash.split('-')[1];
          Slides.goto();
       }
    },
+
+	pickNextColour : function(obj) {
+		if(Slides.colourCount == 2)
+		{
+			Slides.colourCount = 0;
+		}
+		else
+		{
+			Slides.colourCount++;
+		}
+		console.log(Slides.colours[Slides.colourCount] + " " + Slides.colourCount);
+	   return Slides.colours[Slides.colourCount];
+	},
 
    loadContent : function() {
       Slides.container.hide();
@@ -82,6 +82,8 @@ var Slides = {
       ++Slides.currentSlide;
       Slides.updateHash();
       Slides.animate();
+	$("body").css("background-color", Slides.pickNextColour(Slides.colours));
+
    },
 
    prev : function() {
@@ -91,6 +93,8 @@ var Slides = {
       --Slides.currentSlide;
       Slides.updateHash();
       Slides.animate();
+	$("body").css("background-color", Slides.pickNextColour(Slides.colours));
+
    }, 
 
    goto : function(  ) {
@@ -110,7 +114,6 @@ var Slides = {
 			{
 				$(".dino img").hide();
 			}
-//	Slides.changeBackground();
    },
 
    updateHash : function() {

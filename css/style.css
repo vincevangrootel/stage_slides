@@ -119,8 +119,13 @@ li {
 div a, div a:link, div a:visited, div a:hover, div a:active	{
 	text-decoration: none;
 	color: #292929;
-	border-bottom: 1px dashed #000;
 	margin-right: 20px;
+}
+
+.cv_link
+{
+	border-bottom: 1px dashed #000; 
+	cursor:pointer;
 }
 
 

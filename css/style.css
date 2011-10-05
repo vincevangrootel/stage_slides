@@ -21,7 +21,7 @@ body {
 #slides > div {
 	float: left;
 	width: 1180px;
-	height: 680px;
+	height: 730px;
 	margin-right: 200px;
 	text-align: center;
 
@@ -30,12 +30,20 @@ body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-pack: center;
 
+	
+	display: -moz-box;
+	-moz-box-align: center;
+	-moz-box-orient: horizontal;
+	-moz-box-pack: center;
+	
 	display: box;
 	box-align: center;
 	box-orient: horizontal;
 	box-pack: center;
 
 	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
 }
 
 
@@ -128,6 +136,16 @@ div a, div a:link, div a:visited, div a:hover, div a:active	{
 	cursor:pointer;
 }
 
+.arrows
+{
+	margin: 0 auto; 
+	width: 100px;
+}
+
+#left
+{
+	display: none;
+}
 
 /* GRID */
 

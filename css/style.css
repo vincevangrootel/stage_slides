@@ -21,23 +21,20 @@ body {
 #slides > div {
 	float: left;
 	width: 1180px;
-	height: 730px;
+	height: 650px;
 	margin-right: 200px;
 	text-align: center;
 
 	display: -webkit-box;
-	-webkit-box-align: center;
 	-webkit-box-orient: horizontal;
 	-webkit-box-pack: center;
 
 	
 	display: -moz-box;
-	-moz-box-align: center;
 	-moz-box-orient: horizontal;
 	-moz-box-pack: center;
 	
 	display: box;
-	box-align: center;
 	box-orient: horizontal;
 	box-pack: center;
 
